@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>物理网站生成器</title>
+<body>
+<h1>请输入物理作业号码</h1>
+</body>
+<input type="text" id="test1"/><br>
+<input type='button' value='Go' onclick="fun()"/>
+<input type="button" value="Show" onclick="show()"/>
+</head>
+<p id="result"></p>
+<body>
+<script language='javascript'>
+var a = "http://www.sojump.com/jq/";
+function fun() {
+	var b =  document.getElementById("test1").value;
+	document.location = a+b+".aspx";
+}
+
+function show() {
+	var b =  document.getElementById("test1").value;
+	document.getElementById("result").innerHTML = a+b+".aspx";
+}
+</script>
+</body>
+</html>
